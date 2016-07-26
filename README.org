@@ -1,0 +1,7 @@
+
+* What does it do?
+This script returns an html string of a dashboard in console.
+
+* How to?
+Take the script code and paste it in your web browser console. It will return
+the mentioned string.
