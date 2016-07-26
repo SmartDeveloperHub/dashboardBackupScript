@@ -46,33 +46,11 @@ var main_root = document.createElement('div');
 // Lista de atributos a copiar
 var attributes = main_content.attributes
 
-/*
-// Recorremos los atributos de la raiz a copiar
-for (var i = 0; i < main_content.attributes; i++) {
-main_root.setAttribute(attributes[i].name, attributes[i].value);
-}
-*/
-
 // Creamos el arbol
 create_tree(main_content, main_root);
 
-// Sacamos por pantalla el html del arbol resultante
+// Guardamos el html del arbol resultante
 var text = main_root.innerHTML;
-/*
-function format_html(html_dom, profundidad){
-    var cabecera = html_dom.outerHTML.indexOf(html_dom.innerHTML);
-    var result = html_dom.outerHTML.substring(0, cabecera) + "\n";
-
-    // result = cabecera del html
-    // textA = La parte de arriba del texto
-    // format_html() = Los hijos que tenga por debajo
-    // textAB = La parte de abajo del texto
-    // result2 = La parte de abajo del html
-    return result + textA + format_html() + textAB + result2
-}
-
-console.log(format_html(main_root.innerHTML));
-*/
 
 //Descargar archivo
 var a = window.document.createElement('a');
