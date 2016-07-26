@@ -57,7 +57,7 @@ main_root.setAttribute(attributes[i].name, attributes[i].value);
 create_tree(main_content, main_root);
 
 // Sacamos por pantalla el html del arbol resultante
-//console.log(main_root.innerHTML);
+var text = main_root.innerHTML;
 /*
 function format_html(html_dom, profundidad){
     var cabecera = html_dom.outerHTML.indexOf(html_dom.innerHTML);
@@ -75,11 +75,9 @@ console.log(format_html(main_root.innerHTML));
 */
 
 //Descargar archivo
-
-/*
 var a = window.document.createElement('a');
-a.href = window.URL.createObjectURL(new Blob(['Test,Text'], {type: 'text/csv'}));
-a.download = 'test.csv';
+a.href = window.URL.createObjectURL(new Blob([text], {type: 'text/txt'}));
+a.download = 'test.txt';
 
 // Append anchor to body.
 document.body.appendChild(a)
@@ -87,4 +85,3 @@ a.click();
 
 // Remove anchor from body
 document.body.removeChild(a)
-*/
